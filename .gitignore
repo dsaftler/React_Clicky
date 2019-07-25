@@ -1,3 +1,8 @@
+# local
+.DS_Store
+.vscode
+.history
+
 # Logs
 logs
 *.log

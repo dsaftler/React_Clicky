@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+    text-align: center;
+    background-color: #0a0400;
+      color: red;
+}
+
+header {
+  display: grid;
+  grid-template-areas: left center right;
+  grid-template-columns: 175px, auto, 175px;
+  grid-gap: 15px;
+  text-align: center;
+  padding: 10px;
+  /* min-height: 100px; */
+  height: auto;
+}
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px
+}
+p {
+  margin-top: 0px;
+   margin-bottom: 0px
+}
+.center {
+  display: grid;
+  grid-column:2;
+
+  /* float: left;
+  width: 50%; */
+}
+.left {
+  display: grid;
+  grid-column:1;
+  /* float: left; */
+  /* width: 25%; */
+  /* margin-left: -500px; */
+  text-align: right;
+  height: auto;
+  align-self: start;
+}
+.right {
+  display: grid;
+  grid-column: 3;
+ /* float: right; */
+ /* width: 25%; */
+ /* margin-right: -500px; */
+ text-align: left;
+ align-self: start;
+}
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (min-width: 1200px) { 
+  .container  {
+  max-width: 720px !important;
+  }
+}
+@media (min-width: 992px){ 
+.container {
+  max-width: 720px !important;
+}
+}
+@media screen and (max-width: 800px) {
+  .container  {
+     max-width: 550px !important
+  }
+  .column {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .container {
+    max-width: 370px !important
+  }
+   .header {
+     grid-template-areas: "left right"
+     "center"
+   }
+  .column {
+   -ms-flex: 50%;
+   flex: 50%;
+   max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+
+
+/* .App {
+  text-align: center;
+   background-color: #0a0400;
+   color: white;
+} */
+
+
+/* .App-header {
+  background-color: #0a0400;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+.container {
+  align-items: center;
+   justify-content: center;
+  background-color: #0a0400;
+  max-width: 720px;
+  margin: auto;
+  box-shadow: 15px 15px 25px #bd2105
+}
