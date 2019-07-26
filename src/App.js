@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Tiles from './components/tiles'
+import Modal from './components/modal'
 import tiles from './tiles.json'
 import './App.css';
 const maxClicks = tiles.length
@@ -25,6 +26,8 @@ class App extends Component {
       if (this.state.clicked.length === maxClicks ) {
         // this.setState({ wins: this.state.wins + 1, clickCnt: 0, clicked: [] })
         this.setState({ wins: this.state.wins + 1,  clicked: [] })
+        // <Modal > modal('show') </Modal>
+      
       }
     }
     this.state.tiles.sort((a, b) => 0.5 - Math.random());
